@@ -7,9 +7,9 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
+    "moduleResolution": "NodeNext",
+    // "allowImportingTsExtensions": false,
+    "resolveJsonModule": false,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["..eslintrc.cjs","src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
