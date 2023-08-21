@@ -2,7 +2,7 @@ import Navigation from "../components/Navigation.js"
 
  function Landing(){
     return(
-        <div className="bg-red-200">
+        <div className="bg-[">
             
            <header>
            <Navigation/>
