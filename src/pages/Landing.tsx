@@ -1,7 +1,12 @@
+import Navigation from "../components/Navigation.js"
+
  function Landing(){
     return(
-        <div>
-            <h1>Here we go</h1>
+        <div className="bg-red-200">
+            
+           <header>
+           <Navigation/>
+           </header>
         </div>
     )
 }

@@ -1,4 +1,11 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.html', './src/**/*.ts'],
-  // Other Tailwind CSS configuration options...
-};
+  content: [
+    "./index.html", // <= add this
+    "./src/**/*.{js,ts,jsx,tsx}", // <= no spaces
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
