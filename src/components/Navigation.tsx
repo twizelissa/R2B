@@ -26,7 +26,7 @@ export default function Navigation() {
               <div className="navigation__background md:hidden">&nbsp;</div>
 
         {/* 1. Links */}
-            <div className="navigation__nav text-white text-[2rem] fixed top-[6rem] left-[30%] h-[100vh] transition-all duration-[0.8s] w-[100%] hidden z-[1500] md:opacity-1">
+            <div className="navigation__nav text-white text-[2rem] fixed top-[6rem] left-[30%] h-[100vh] transition-all duration-[0.8s] w-[100%] hidden md:block z-[1500] md:opacity-1">
             <ul className="flex flex-col md:flex-row gap-10 mt-20 md:mt-0">
                 <li><Link to={"/home"}>Home</Link></li>
                 <li><Link to={"/#"}>About us</Link></li>
