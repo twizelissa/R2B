@@ -7,7 +7,7 @@ import Logo from  './../assets/images/RtoB Whitelogo.png';
 
 export default function Navigation() {
   return (
-    <div className=''>
+    <div className='px-[3rem]'>
         <div className="flex gap-4 text-[.8rem] items-center justify-between text-white">
             <div className='w-20 h-20'><img src={Logo} alt="" /></div>
 

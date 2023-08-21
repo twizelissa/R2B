@@ -23,7 +23,11 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 0 3rem;
+  /* padding: 0 3rem; */
   background: #192F43;
   font-family: Lato, 'sans-serif';
+}
+
+main{
+  padding: 0 3rem;
 }
