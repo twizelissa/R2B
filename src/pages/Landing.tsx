@@ -7,7 +7,7 @@ import bgVideo from './../assets/videos/bg-video.mp4'
         <div className="bg-[">
             
            <header className="w-full h-[100vh] relative">
-           <Navigation/>
+               <Navigation/>
 
            <div className="bg-video absolute top-0 left-0 h-full w-full -z-1 opacity-[0.15] overflow-">
           <video className="bg-video__content h-full w-full object-cover" autoPlay muted loop>
