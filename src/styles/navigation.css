@@ -23,7 +23,8 @@
     position: relative;
     margin-top: .7rem;
     margin-left: .6rem;
-    font-size: 1.8rem;  
+    font-size: 1.8rem;
+    color: #192F43;
   }
   
   .navigation__button:hover .navigation__icon::before {
