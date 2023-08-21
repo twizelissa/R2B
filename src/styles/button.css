@@ -1,0 +1,70 @@
+.btn,
+.btn:link,
+.btn:visited {
+      /* text-transform: uppercase; */
+      text-decoration: none;
+      padding: 2rem 5rem;
+      display: inline-block;
+      /* border-radius: 10rem; */
+      transition: all 0.2s;
+      position: relative;
+      font-size: 2rem;
+      border: none;
+      cursor: pointer;
+}
+
+.btn::after {
+    content: ""; /* mandatory */
+    display: inline-block; /* mandatory */
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+}
+
+  .btn--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+
+.btn:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba(#0000, 0.2);
+}
+
+.btn:hover::after {
+      transform: scaleX(1.5) scaleY(1.6);
+      opacity: 0;
+}
+
+.btn:active,.btn:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+}
+
+.btn--white {
+    background-color: white;
+    opacity: 0.65;
+    color: #192F43;
+    font-weight: 600;
+}
+
+.btn--white::after {
+    background-color: white;
+    z-index: -1;
+}
+
+@keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
