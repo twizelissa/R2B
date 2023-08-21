@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import {IoMdArrowDropdown} from "react-icons/io";
+import {AiOutlineMenu} from 'react-icons/ai'
 
 import usflag from "./../assets/images/usflag.jpg"
 import Logo from  './../assets/images/RtoB Whitelogo.png';
@@ -12,10 +13,12 @@ export default function Navigation() {
 {/* For responsive navigation */}
 <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
       <label htmlFor="navi-toggle" className="navigation__button">
-        <span className="navigation__icon"> &nbsp; </span></label>
+        {/* <span className="navigation__icon"> &nbsp; </span> */}
+        <AiOutlineMenu className="navigation__icon"/>
+        </label>
 
 
-        <div className="navigation__nav flex gap-4 text-[.8rem] items-center justify-between text-white">
+        <div className="navigation__nav flex gap-4 text-[1.5rem] items-center justify-between text-white">
           {/*1. Logo */}
             <div className='w-20 h-20'><img src={Logo} alt="" /></div>
 
