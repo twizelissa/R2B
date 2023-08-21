@@ -4,7 +4,7 @@ import bgVideo from './../assets/videos/bg-video.mp4'
 
  function Landing(){
     return(
-        <div className="bg-[">
+        <div className="">
             
            <header className="w-full h-[100vh] relative">
                <Navigation/>
