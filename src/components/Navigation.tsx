@@ -11,19 +11,18 @@ export default function Navigation() {
     <div className='px-[3rem]'>
 
 {/* For responsive navigation */}
-<input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
+{/* <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
       <label htmlFor="navi-toggle" className="navigation__button">
-        {/* <span className="navigation__icon"> &nbsp; </span> */}
         <AiOutlineMenu className="navigation__icon"/>
-        </label>
+        </label> */}
 
 
-        <div className="navigation__nav flex gap-4 text-[1.5rem] items-center justify-between text-white">
+        <div className="navigation__nav flex gap-4 text-[2rem] items-center justify-between text-white">
           {/*1. Logo */}
-            <div className='w-20 h-20'><img src={Logo} alt="" /></div>
+            <div className='w-[10%]'><img src={Logo} className='w-25 h-25' alt="" /></div>
 
 {/* 1. Links */}
-            <ul className='flex gap-8'>
+            <ul className='flex gap-10'>
                 <li><Link to={"/home"}>Home</Link></li>
                 <li><Link to={"/#"}>About us</Link></li>
                 <li><Link to={"/#"}>Services</Link></li>
@@ -34,10 +33,8 @@ export default function Navigation() {
 
 {/* 3. Localisation */}
             <div className='flex gap-2'>
-              <div className=' '>
-              <img src={usflag} className='rounded-full w-6 h-6 object-fit' alt="localisation img" />
-              </div>
-              <IoMdArrowDropdown className="text-lg"/>
+              <img src={usflag} className='rounded-full w-14 h-14 object-fit' alt="localisation img" />
+              <IoMdArrowDropdown className="text-[3rem]"/>
             </div>
 
 {/* Contact */}
