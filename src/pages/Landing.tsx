@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation.js"
 import './../styles/button.css'
 
 import bgVideo from './../assets/videos/bg-video.mp4'
+import VerticalSocialMedia from "../components/VerticalSocialMedia.js"
 
  function Landing(){
     return(
@@ -20,8 +21,8 @@ import bgVideo from './../assets/videos/bg-video.mp4'
               </video>
            </div>
 
-          <div className="absolute text-center top-[50%] left-[20%] md:left-[50%] transform -translate-x-[15%] md:-translate-x-[50%] -translate-y-[50%] ">
-            <h1 className="text-center text-white block text-[3rem] md:text-[8rem] md:leading-[9rem] mb-40">
+          <div className="absolute text-center top-[60%] md:top-[50%] left-[20%] md:left-[50%] transform -translate-x-[10%] md:-translate-x-[50%] -translate-y-[50%] ">
+            <h1 className="text-center text-white block text-[3rem] md:text-[8rem] md:leading-[9rem] mb-32 md:mb-40">
               Get your company grow with our services
             </h1>
 
@@ -31,7 +32,9 @@ import bgVideo from './../assets/videos/bg-video.mp4'
         
           </div>
 
-      
+          <div className="absolute top-[10rem] md:top-[20rem]  left-[.5rem] md:left-[6rem]">
+          <VerticalSocialMedia/>
+          </div>
            </header>
 
            <main>
