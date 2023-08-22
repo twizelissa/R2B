@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import aboutImage from './../assets/images/about-analytics.jpg'
 import Navigation from "../components/Navigation.js"
 import './../styles/button.css'
@@ -36,15 +35,19 @@ import Button from "../components/Button.js"
           </div>
            </header>
 
+
+{/* MAIN */}
            <main>
-            <div className="flex bg-[#828f9a] gap-40  h-[45vh]">
-              <div className="w-[50%]">
+
+            {/* About section */}
+            <div className="flex flex-col md:flex-row bg-[#828f9a] md:gap-40 h-[60vh] md:h-[45vh]">
+              <div className="w-[100%] md:w-[50%]">
                 <img src={aboutImage} className="object-cover w-full h-full" alt="About image" />
               </div>
 
-              <div className="w-[45%] py-16 text-white ">
-                <h1 className="text-[5rem]">About us</h1>
-                <p className="w-[75%] py-10 text-[1.5rem]">Hi! You’ve been wondering how and where you can get services such as software development for 
+              <div className="w-[100%] md:w-[45%] py-16 px-4 md:px-0 text-white ">
+                <h1 className="text-headerFontPhone md:text-headerFontWeb leading-10 md:leading-normal">About us</h1>
+                <p className="w-[95%] md:w-[75%] py-10 text-[1.5rem]">Hi! You’ve been wondering how and where you can get services such as software development for 
                   your company, digital marketing services,  motion graphics, and monetization. 
                   Here you are.</p>
 
@@ -52,8 +55,10 @@ import Button from "../components/Button.js"
               </div>
             </div>
 
+{/* Services section*/}
             <div className="">
-              Something else
+              <div className="border"></div>
+              <h1>Services</h1>
             </div>
            </main>
         </div>
