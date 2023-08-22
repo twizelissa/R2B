@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
-
+import aboutImage from './../assets/images/about-analytics.jpg'
 import Navigation from "../components/Navigation.js"
 import './../styles/button.css'
 
 import bgVideo from './../assets/videos/bg-video.mp4'
 import VerticalSocialMedia from "../components/VerticalSocialMedia.js"
+import Button from "../components/Button.js"
 
  function Landing(){
     return(
@@ -26,9 +27,7 @@ import VerticalSocialMedia from "../components/VerticalSocialMedia.js"
               Get your company grow with our services
             </h1>
 
-            <a href={"/about-us"} className="btn btn--white btn--animated">
-              Learn more
-            </a>
+            <Button btnLabel="Learn more" linkTo="about-us"/>
         
           </div>
 
@@ -38,7 +37,24 @@ import VerticalSocialMedia from "../components/VerticalSocialMedia.js"
            </header>
 
            <main>
-            Here we go
+            <div className="flex bg-[#828f9a] gap-40  h-[45vh]">
+              <div className="w-[50%]">
+                <img src={aboutImage} className="object-cover w-full h-full" alt="About image" />
+              </div>
+
+              <div className="w-[45%] py-16 text-white ">
+                <h1 className="text-[5rem]">About us</h1>
+                <p className="w-[75%] py-10 text-[1.5rem]">Hi! You’ve been wondering how and where you can get services such as software development for 
+                  your company, digital marketing services,  motion graphics, and monetization. 
+                  Here you are.</p>
+
+                  <Button btnLabel="Learn more" linkTo="about-us"/>
+              </div>
+            </div>
+
+            <div className="">
+              Something else
+            </div>
            </main>
         </div>
     )

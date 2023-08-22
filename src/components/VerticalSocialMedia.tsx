@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom'
 export default function VerticalSocialMedia() {
   return (
     <div>
-        <div className="flex flex-col items-center gap-8 md:gap-10">
+        <div className="flex flex-col items-center gap-8 md:gap-10 text-[#8AC5FC]">
             <div className="border h-16 md:h-24 border-[#8AC5FC]"></div>
-            <Link to={"/#"}> <BiLogoFacebook className="text-3xl md:text-4xl text-[#8AC5FC]"/> </Link>
-            <Link to={"/#"}> <CiTwitter className="text-3xl md:text-4xl text-[#8AC5FC]"/></Link>
-            <Link to={"/"}> <BiLogoInstagram className="text-3xl md:text-4xl text-[#8AC5FC]"/> </Link>
-            <Link to={"/#"}> <CiYoutube className="text-3xl md:text-4xl text-[#8AC5FC]"/></Link>
-            <div className="border h-16 md:h-24 border-[#8AC5FC] text-[#8AC5FC]"></div>
+            <Link to={"/#"}> <BiLogoFacebook className="text-3xl md:text-4xl"/> </Link>
+            <Link to={"/#"}> <CiTwitter className="text-3xl md:text-4xl"/></Link>
+            <Link to={"/"}> <BiLogoInstagram className="text-3xl md:text-4xl"/> </Link>
+            <Link to={"/#"}> <CiYoutube className="text-3xl md:text-4xl"/></Link>
+            <div className="border h-16 md:h-24 border-[#8AC5FC]"></div>
         </div>
     </div>
   )
