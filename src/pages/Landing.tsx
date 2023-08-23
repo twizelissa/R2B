@@ -18,6 +18,7 @@ import chooseUsImage from './../assets/images/why-choose-us.jpg'
 import awardImage from './../assets/images/golden-award.jpg'
 import { Link } from 'react-router-dom'
 import HeaderBorder from '../components/HeaderBorder.js'
+import Footer from '../components/Footer.js'
 
  function Landing(){
     return(
@@ -149,7 +150,7 @@ import HeaderBorder from '../components/HeaderBorder.js'
 
 {/* ---------- Awards section */}
             <div className="relative top-96">
-            <HeaderBorder/>
+              <HeaderBorder/>
               <h1 className='text-white text-headerFontPhone md:text-headerFontWeb'>Numbers</h1>
 
               <div className="relative">
@@ -180,6 +181,11 @@ import HeaderBorder from '../components/HeaderBorder.js'
                   </div>
                 </div>
               </div>
+            </div>
+
+{/* -------Footer */}
+            <div className='relative top-96'>
+              <Footer/>
             </div>
            </main>
         </div>
