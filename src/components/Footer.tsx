@@ -9,8 +9,8 @@ export default function Footer() {
     <div className="py-24 my-20 text-white text-baseFont">
        <div className="flex items-start gap-20 h-full">
          {/* Logo */}
-         <div className="flex flex-col justify-between h-[20vh] w-[15%]">
-            <div>
+         <div className="flex flex-col justify-between h-[20vh] w-[25%]">
+            <div className='w-[90%]'>
                 <img src={Logo} className='w-full object-cover' alt="logo" />
             </div>
 
@@ -69,6 +69,20 @@ export default function Footer() {
                 <Link to={"/#"} className='opacity-[0.8]'>Skill Training</Link>
                 <Link to={"/#"} className='opacity-[0.8]'>Learning Bootcamps</Link>
             </div>
+        </div>
+       </div>
+
+       {/* copyright */}
+       <div className="mt-32">
+        <div className="w-[70%] m-auto">
+            <div className="flex items-center">
+                &copy; <div className="w-52">
+                <img src={Logo} className='' alt="" />
+                </div>
+                <div className="border-y-[1px] border-white rotate-90 w-[2%]"></div>
+                <p>Privacy policy</p>
+            </div>
+            <div className="border-[1px] border-[#29557C] w-[100%]"></div>
         </div>
        </div>
     </div>
