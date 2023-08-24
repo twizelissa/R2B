@@ -23,7 +23,6 @@ import Footer from '../components/Footer.js'
  function Landing(){
     return(
         <div className="">
-            
            <header className="w-full h-[55vh] md:h-[100vh] relative">
                <Navigation/>
 
@@ -40,8 +39,7 @@ import Footer from '../components/Footer.js'
               Get your company grow with our services
             </h1>
 
-            <Button btnLabel="Learn more" linkTo="about-us"/>
-        
+            <Button btnLabel="Learn more" linkTo="about-us"/>       
           </div>
 
           <div className="absolute top-[10rem] md:top-[20rem]  left-[.5rem] md:left-[6rem]">
