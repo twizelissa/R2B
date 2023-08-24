@@ -6,18 +6,16 @@ export default function About() {
   return (
     <div>
       {/* Navigatoin */}
-      <div className="">
+      <header>
         <Navigation/>
-      </div>
+      </header>
       <div className="">
         <main>
-          
+
         </main>
       </div>
       {/* Footer */}
-      <div className="">
-        <Footer/>
-      </div>
+      <Footer/>
     </div>
   )
 }
