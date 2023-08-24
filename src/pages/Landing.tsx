@@ -62,7 +62,6 @@ import Footer from '../components/Footer.js'
                 <p className="w-[95%] md:w-[75%] py-10 text-[1.5rem]">Hi! You’ve been wondering how and where you can get services such as software development for 
                   your company, digital marketing services,  motion graphics, and monetization. 
                   Here you are.</p>
-
                   <Button btnLabel="Learn more" linkTo="about-us"/>
               </div>
             </div>
@@ -180,12 +179,12 @@ import Footer from '../components/Footer.js'
                 </div>
               </div>
             </div>
+           </main>
 
-{/* -------Footer */}
-            <div className='relative top-96'>
+           {/* -------Footer */}
+           <div className='relative top-96'>
               <Footer/>
             </div>
-           </main>
         </div>
     )
 }

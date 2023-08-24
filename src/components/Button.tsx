@@ -1,7 +1,14 @@
+import { Link } from "react-router-dom";
+
 export default function Button({btnLabel,linkTo}:{btnLabel:string,linkTo:string}) {
   return (
-    <a href={`/${linkTo}`} className="btn btn--white btn--animated">
+    <div className="">
+      {/* <a href={`/${linkTo}`} >
         {btnLabel}
-    </a>
+    </a> */}
+    <Link to={`/about-us`} className="btn btn--white btn--animated">
+      {btnLabel}
+    </Link>
+    </div>
   )
 }
