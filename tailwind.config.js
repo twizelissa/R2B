@@ -5,7 +5,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}", // <= no spaces
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize:{
+        headerFontWeb:'5rem',
+        headerFontPhone:'3.5rem',
+        baseFont:'1.5rem'
+      },
+      colors:{
+        baseColor:"#192F43",
+        secondColor:"#8AC5FC"
+      }
+    },
   },
   plugins: [],
 }

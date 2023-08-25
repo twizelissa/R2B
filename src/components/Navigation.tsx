@@ -11,12 +11,11 @@ export default function Navigation() {
     <div className='px-[1rem] md:px-[3rem] relative'>
 
           {/*1. Logo */}
-          <div className='absolute  top-0 md:left-[6rem] z-[1500]'>
+          <div className='absolute top-0 md:left-[6rem] z-[1500]'>
               <img src={Logo} className='h-[6rem] md:h-[10rem]' alt="Logo" />
             </div>
 
 
-       {/* <div className="flex text-[2rem] justify-center text-white"> */}
       {/* For responsive navigation */}
           <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
               <label htmlFor="navi-toggle" className="navigation__button md:hidden">
@@ -35,7 +34,6 @@ export default function Navigation() {
                 <li><Link to={"/#"}>News</Link></li>
                 <li><Link to={"/#"}>Careers</Link></li>
             </ul>
-            {/* </div> */}
         </div>
 
 
@@ -48,7 +46,7 @@ export default function Navigation() {
               </div>
 
     {/* Contact */}
-              <div className="bg-white px-8 py-4 text-md md:px-14 md:py-6 text-2xl text-[#192F43]">
+              <div className="bg-white px-8 py-4 text-md md:px-14 md:py-6 text-2xl text-baseColor">
                 <Link to={"/contact"}>CONTACT</Link>
               </div>
             </div>
