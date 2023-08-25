@@ -14,6 +14,15 @@ module.exports = {
       colors:{
         baseColor:"#192F43",
         secondColor:"#8AC5FC"
+      },
+      keyframes:{
+        moveLabel:{
+          '0%': {opacity: 0,transform: 'translateY(3rem)'},
+          '100%': {opacity:1, transform: 'translate(0)'}
+        }
+      },
+      animation:{
+        moveLabel:'moveLabel 3s ease-in-out infinite'
       }
     },
   },

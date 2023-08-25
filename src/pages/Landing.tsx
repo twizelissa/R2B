@@ -17,12 +17,12 @@ import chooseUsImage from './../assets/images/why-choose-us.jpg'
 
 import awardImage from './../assets/images/golden-award.jpg'
 import { Link } from 'react-router-dom'
-import HeaderBorder from '../components/HeaderBorder.js'
 import Footer from '../components/Footer.js'
+import Title from '../components/Title.js'
 
  function Landing(){
     return(
-        <div className="">
+        <div>
            <header className="w-full h-[55vh] md:h-[100vh] relative">
                <Navigation/>
 
@@ -62,15 +62,13 @@ import Footer from '../components/Footer.js'
                 <p className="w-[95%] md:w-[75%] py-10 text-[1.5rem]">Hi! You’ve been wondering how and where you can get services such as software development for 
                   your company, digital marketing services,  motion graphics, and monetization. 
                   Here you are.</p>
-
                   <Button btnLabel="Learn more" linkTo="about-us"/>
               </div>
             </div>
 
 {/* -------Services section */}
             <div className="py-24 md:py-36 relative top-full">
-              <HeaderBorder/>
-              <h1 className='text-white text-headerFontPhone md:text-headerFontWeb'>Services</h1>
+              <Title title='Services'/>
               <div className="mt-20">
                 <img src={wheelImage} alt="wheel svg" />
               </div>
@@ -112,8 +110,7 @@ import Footer from '../components/Footer.js'
 
 {/* ----------why choose us */}
             <div className="relative top-full">
-              <HeaderBorder/>
-              <h1 className='text-white text-headerFontPhone md:text-headerFontWeb'>Why choose us?</h1>
+            <Title title='Why choose us?'/>
               
               <div className="w-[100%] md:w-[34%] text-baseFont relative">
                 <div className="mt-24">
@@ -148,8 +145,7 @@ import Footer from '../components/Footer.js'
 
 {/* ---------- Awards section */}
             <div className="relative top-96">
-              <HeaderBorder/>
-              <h1 className='text-white text-headerFontPhone md:text-headerFontWeb'>Numbers</h1>
+            <Title title='Numbers'/>
 
               <div className="relative">
                 <div className="w-[30%] absolute top-[12.5%] z-50">
@@ -180,12 +176,12 @@ import Footer from '../components/Footer.js'
                 </div>
               </div>
             </div>
+           </main>
 
-{/* -------Footer */}
-            <div className='relative top-96'>
+           {/* -------Footer */}
+           <div className='relative top-96'>
               <Footer/>
             </div>
-           </main>
         </div>
     )
 }
