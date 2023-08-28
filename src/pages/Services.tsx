@@ -1,5 +1,4 @@
 import {SiToyota,SiMitsubishi, SiSony, SiKyocera, SiNec} from 'react-icons/si'
-import {CgWebsite} from 'react-icons/cg'
 
 import Navigation from '../components/Navigation.js'
 import Footer from '../components/Footer.js'
