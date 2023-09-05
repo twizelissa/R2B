@@ -15,6 +15,9 @@ import faqImage from './../assets/images/faq.jpg';
 import Title from '../components/Title.js';
 import faqAndAnswers from '../data/faq.js';
 import { useState } from 'react';
+import VerticalSocialMedia from '../components/VerticalSocialMedia.js';
+
+import CEO from './../assets/images/on-mac.jpg'
 
 export default function About() {
   const imageStyle = 'w-full h-full rounded-xl object-cover overflow-hidden'
@@ -162,6 +165,73 @@ export default function About() {
 
                 <button className='text-white text-center py-4 px-20 bg-baseColor hover:bg-baseColor hover:opacity-70 transition-all duration-300'>Submit</button>
               </form>
+            </div>
+          </div>
+        </div>
+
+        {/* ------------ TEAM ------------- */}
+        <div className="mt-32">
+          <Title title='Team'/>
+
+          <div className="bg-secondColor opacity-40 flex flex-wrap gap-20 justify-center my-10 md:p-40 p-10">
+            <div className="w-full md:w-[45%] h-[65vh] relative">
+              <div className="flex md:flex-row flex-col w-full h-full bg-baseColor">
+                <div className="text-md w-[15%] h-[60%] text-white">
+                  <VerticalSocialMedia/>
+                </div>
+                <div className="w-[75%] translate-x-[5%] translate-y-[15%]">
+                  <img src={CEO} className='h-[75%] object-cover' alt="" />
+                </div>
+              </div>
+
+              <div className="border border-white absolute text-white py-6 px-20 -top-[5%] left-[30%]">
+              <h1 className='border-b-2 border-t-2 b'>CEO</h1>
+              </div>
+            </div>
+
+            <div className="w-full md:w-[45%] h-[65vh] relative">
+              <div className="flex w-full h-full bg-baseColor">
+                <div className="text-md w-[15%] h-[60%] text-white">
+                  <VerticalSocialMedia/>
+                </div>
+                <div className="w-[75%] translate-x-[5%] translate-y-[15%]">
+                  <img src={CEO} className='h-[75%] object-cover' alt="" />
+                </div>
+              </div>
+
+              <div className="border border-white absolute text-white py-6 px-20 -top-[5%] left-[30%]">
+              <h1 className='border-b-2 border-t-2 b'>CEO</h1>
+              </div>
+            </div>
+
+            <div className="w-full md:w-[45%] h-[65vh] relative">
+              <div className="flex w-full h-full bg-baseColor">
+                <div className="text-md w-[15%] h-[60%] text-white">
+                  <VerticalSocialMedia/>
+                </div>
+                <div className="w-[75%] translate-x-[5%] translate-y-[15%]">
+                  <img src={CEO} className='h-[75%] object-cover' alt="" />
+                </div>
+              </div>
+
+              <div className="border border-white absolute text-white py-6 px-20 -top-[5%] left-[30%]">
+              <h1 className='border-b-2 border-t-2 b'>CEO</h1>
+              </div>
+            </div>
+
+            <div className="w-full md:w-[45%] h-[65vh] relative">
+              <div className="flex w-full h-full bg-baseColor">
+                <div className="text-md w-[15%] h-[60%] text-white">
+                  <VerticalSocialMedia/>
+                </div>
+                <div className="w-[75%] translate-x-[5%] translate-y-[15%]">
+                  <img src={CEO} className='h-[75%] object-cover' alt="" />
+                </div>
+              </div>
+
+              <div className="border border-white absolute text-white py-6 px-20 -top-[5%] left-[30%]">
+              <h1 className='border-b-2 border-t-2 b'>CEO</h1>
+              </div>
             </div>
           </div>
         </div>
