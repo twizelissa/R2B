@@ -13,7 +13,8 @@ module.exports = {
       },
       colors:{
         baseColor:"#192F43",
-        secondColor:"#8AC5FC"
+        secondColor:"#8AC5FC",
+        theGreyish: "#D9D9D9"
       },
       keyframes:{
         moveLabel:{

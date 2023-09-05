@@ -1,3 +1,5 @@
+import {IoArrowDownCircleOutline, IoArrowUpCircleOutline} from 'react-icons/io5'
+
 import Navigation from '../components/Navigation.js'
 import Footer from '../components/Footer.js'
 
@@ -11,6 +13,7 @@ import digitalMarketingImage from './../assets/images/digital-marketing.jpg'
 import faqImage from './../assets/images/faq.jpg';
 
 import Title from '../components/Title.js';
+import faqAndAnswers from '../data/faq.js';
 
 export default function About() {
   const imageStyle = 'w-full h-full rounded-xl object-cover overflow-hidden'
@@ -108,14 +111,55 @@ export default function About() {
           </div>
         </div>
 
+
+{/* ----------FAQ--------------- */}
+
         <div className="mt-32 relative">
-          <div className="w-full ">
+          <div className="w-full h-min">
             <img src={faqImage} alt="faq" />
           </div>
 
           <div className="bg-baseColor opacity-[0.70] absolute top-0 left-0 h-full w-full"></div>
+          <div className="absolute left-20 top-20 w-full flex">
+            <div className="w-[50%]">
+              <Title title='FAQ'/>
+              <div className="w-full">
+                    {
+                      faqAndAnswers.map((item, index)=>(
+                        <div className="bg-theGreyish cursor-pointer text-baseColor rounded-2xl p-8 my-6" key={index} >
+                          <div className="w-full flex justify-between items-center mb-6">
+                            <h1 className='font-semibold'>{item.question}</h1>
+                            <IoArrowDownCircleOutline/>
+                          </div>
+                            <p className='text-[1.4rem] w-[85%] hidden'>{item.answer}</p>
+                        </div>
+                      ))
+                    }
+              </div>
+            </div>
+            
+            {/* form */}
+            <div className="bg-secondColor  text-baseColor opacity-80 w-[30%] h-[50vh] translate-y-[50%] translate-x-[20%] p-12">
+              <form onSubmit={e => e.preventDefault()} className=''>
+                <h1 className='text-center text-5xl mb-8'>Ask your question</h1>
 
-          <Title title='FAQ'/>
+                <div className="w-[70%] my-10">
+                  <input type="text" className='bg-transparent border-b border-baseColor focus:outline-none w-full text-[1.3rem] placeholder-baseColor' placeholder='Name' />
+                </div>
+
+                <div className="w-[70%] my-10">
+                  <input type="email" className='bg-transparent border-b border-baseColor focus:outline-none w-full text-[1.3rem] placeholder-baseColor' placeholder='Email' />
+                </div>
+
+                <div className="w-[100%] my-10">
+                  <textarea className='bg-transparent border-b border-baseColor focus:outline-none w-full text-[1.3rem] placeholder-baseColor' placeholder='Question...'>
+                   </textarea>
+                </div>
+
+                <button className='text-white text-center py-4 px-20 bg-baseColor hover:bg-baseColor hover:opacity-70 transition-all duration-300'>Submit</button>
+              </form>
+            </div>
+          </div>
         </div>
       </main>
 
