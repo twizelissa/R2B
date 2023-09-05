@@ -14,9 +14,12 @@ import faqImage from './../assets/images/faq.jpg';
 
 import Title from '../components/Title.js';
 import faqAndAnswers from '../data/faq.js';
+import { useState } from 'react';
 
 export default function About() {
   const imageStyle = 'w-full h-full rounded-xl object-cover overflow-hidden'
+  const [opened, setOpened] = useState(0);
+
   return (
     <div>
 {/* -------- Navigatoin */}
@@ -126,12 +129,13 @@ export default function About() {
               <div className="w-full">
                     {
                       faqAndAnswers.map((item, index)=>(
-                        <div className="bg-theGreyish cursor-pointer text-baseColor rounded-2xl p-8 my-6" key={index} >
+                        <div className="bg-theGreyish cursor-pointer text-baseColor rounded-2xl p-8 my-6 transition-all duration-500" key={index}
+                        onClick={()=>setOpened(index)} >
                           <div className="w-full flex justify-between items-center mb-6">
-                            <h1 className='font-semibold'>{item.question}</h1>
-                            <IoArrowDownCircleOutline/>
+                            <h1 className='font-semibold text-[1.7rem]'>{item.question}</h1>
+                            {opened === index ?<IoArrowUpCircleOutline/> : <IoArrowDownCircleOutline/>}
                           </div>
-                            <p className='text-[1.4rem] w-[85%] hidden'>{item.answer}</p>
+                            <p className={`text-[1.4rem] w-[85%] ${opened === index? ``:'hidden'}`}>{item.answer}</p>
                         </div>
                       ))
                     }
@@ -140,7 +144,7 @@ export default function About() {
             
             {/* form */}
             <div className="bg-secondColor  text-baseColor opacity-80 w-[30%] h-[50vh] translate-y-[50%] translate-x-[20%] p-12">
-              <form onSubmit={e => e.preventDefault()} className=''>
+              <form onSubmit={e => e.preventDefault()}>
                 <h1 className='text-center text-5xl mb-8'>Ask your question</h1>
 
                 <div className="w-[70%] my-10">
