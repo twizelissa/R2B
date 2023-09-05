@@ -11,7 +11,6 @@ import './../styles/button.css'
 import aboutImage from './../assets/images/about-analytics.jpg'
 import servicesImage from './../assets/images/services.jpg'
 import wheelImage from './../assets/images/wheel-image.svg'
-import bgVideo from './../assets/videos/bg-video.mp4'
 import sidePoints from './../assets/images/points.svg'
 import chooseUsImage from './../assets/images/why-choose-us.jpg'
 
@@ -27,11 +26,11 @@ import Title from '../components/Title.js'
                <Navigation/>
 
            <div className="bg-video absolute top-0 left-0 h-full w-full -z-1 opacity-[0.07] overflow-hidden">
-              <video className="bg-video__content h-full w-full object-cover" autoPlay muted loop>
+              {/* <video className="bg-video__content h-full w-full object-cover" autoPlay muted loop>
                 <source src={bgVideo} type="video/mp4" />
                 <source src="img/" type="video/webm" />
                 Your browser is not supported
-              </video>
+              </video> */}
            </div>
 
           <div className="absolute text-center top-[60%] md:top-[50%] left-[20%] md:left-[50%] transform -translate-x-[10%] md:-translate-x-[50%] -translate-y-[50%] ">
