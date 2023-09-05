@@ -21,10 +21,15 @@ export default function About() {
         <Navigation/>
 
         <div className="flex h-[80vh] relative">
-          <div className="bg-secondColor opacity-[0.35] w-[50%] relative -z-50">
-            <h1 className='text-white absolute top-[60%] md:top-[50%] left-[20%] md:left-[50%] transform -translate-x-[10%] md:-translate-x-[50%] -translate-y-[50%]'>
-              <span className='block text-[6rem]'>ABOUT US</span>
-              <span className='block'>Get and use digital services in every corner.</span>
+          <div className="w-[50%] h-full relative -z-50">
+            <div className="bg-secondColor opacity-[0.35] w-[100%] h-full"></div>
+            <h1 className='text-white text-baseFont leading-[1.5]  opacity-100 z-10 absolute top-[60%] md:top-[50%] left-[20%] md:left-[35%] transform -translate-x-[10%] md:-translate-x-[35%] -translate-y-[50%]'>
+              <span className='block text-[6rem] font-semibold my-10'>ABOUT US</span>
+              <span className='block'>
+              We work with Rwandan passionate and dedicated software engineers. Rwandan government is focusing on ICT development.
+               Our members are fluent in Japanese, English, French and Kinyarwanda, which enables smooth team assignment and 
+               software development.
+              </span>
             </h1>
           </div>
 
