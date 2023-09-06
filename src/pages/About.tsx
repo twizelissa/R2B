@@ -17,7 +17,10 @@ import faqAndAnswers from '../data/faq.js';
 import { useState } from 'react';
 import VerticalSocialMedia from '../components/VerticalSocialMedia.js';
 
-import CEO from './../assets/images/on-mac.jpg'
+import Kotone from './../assets/images/Kotone.jpg'
+import Olivier from './../assets/images/Olivier.jpg'
+import Elsa from './../assets/images/Elsa.jpg'
+import La_paix from './../assets/images/profile.jpg'
 
 export default function About() {
   const imageStyle = 'w-full h-full rounded-xl object-cover overflow-hidden'
@@ -180,7 +183,7 @@ export default function About() {
                   <VerticalSocialMedia/>
                 </div>
                 <div className="w-[75%] translate-x-[5%] translate-y-[15%]">
-                  <img src={CEO} className='h-[75%] object-cover' alt="" />
+                  <img src={Kotone} className='h-[75%] object-cover' alt="" />
                 </div>
               </div>
 
@@ -195,7 +198,7 @@ export default function About() {
                   <VerticalSocialMedia/>
                 </div>
                 <div className="w-[75%] translate-x-[5%] translate-y-[15%]">
-                  <img src={CEO} className='h-[75%] object-cover' alt="" />
+                  <img src={Olivier} className='h-[75%] object-cover' alt="" />
                 </div>
               </div>
 
@@ -210,7 +213,7 @@ export default function About() {
                   <VerticalSocialMedia/>
                 </div>
                 <div className="w-[75%] translate-x-[5%] translate-y-[15%]">
-                  <img src={CEO} className='h-[75%] object-cover' alt="" />
+                  <img src={Elsa} className='h-[75%] object-cover' alt="" />
                 </div>
               </div>
 
@@ -225,7 +228,7 @@ export default function About() {
                   <VerticalSocialMedia/>
                 </div>
                 <div className="w-[75%] translate-x-[5%] translate-y-[15%]">
-                  <img src={CEO} className='h-[75%] object-cover' alt="" />
+                  <img src={La_paix} className='h-[75%] object-cover' alt="" />
                 </div>
               </div>
 
