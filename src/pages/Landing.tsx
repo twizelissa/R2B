@@ -107,8 +107,8 @@ function Landing(){
             </div>
 
 {/* ----------why choose us */}
-            <div className="relative top-full">
-            <Title title='Why choose us?'/>
+            <div className="relative top-[24rem]">
+              <Title title='Why choose us?'/>
               
               <div className="w-[100%] md:w-[34%] text-baseFont relative">
                 <div className="mt-24">
@@ -142,7 +142,7 @@ function Landing(){
             </div>
 
 {/* ---------- Awards section */}
-            <div className="relative top-96">
+            <div className="relative top-[44rem]">
             <Title title='Numbers'/>
 
               <div className="relative">
@@ -177,7 +177,7 @@ function Landing(){
            </main>
 
            {/* -------Footer */}
-           <div className='relative top-96'>
+           <div className='relative top-[44rem]'>
               <Footer/>
             </div>
         </div>
