@@ -3,16 +3,16 @@ import {IoMdArrowDropdown} from "react-icons/io";
 import {AiOutlineMenu} from 'react-icons/ai'
 
 import usflag from "./../assets/images/usflag.jpg"
-import Logo from  './../assets/images/RtoB Whitelogo.png';
+import Logo from  './../assets/images/RtoB Whitelogo_横長.png';
 import './../styles/navigation.css'
 
 export default function Navigation() {
   return (
-    <div className='px-[1rem] md:px-[3rem] relative'>
+    <div className='px-[1rem] md:px-[3rem] relative bg-baseColor bg-local h-[12%]'>
 
           {/*1. Logo */}
-          <div className='absolute top-0 md:left-[6rem] z-[1500]'>
-              <img src={Logo} className='h-[6rem] md:h-[10rem]' alt="Logo" />
+          <div className='absolute top-5 md:left-[6rem] z-[1500]'>
+              <img src={Logo} className='h-[6rem] md:h-[7rem]' alt="Logo" />
             </div>
 
 
@@ -25,7 +25,7 @@ export default function Navigation() {
               <div className="navigation__background md:hidden">&nbsp;</div>
 
         {/* 1. Links */}
-            <div className="navigation__nav text-white text-[2rem] fixed top-[6rem] left-[30%] transition-all duration-[0.8s] w-[100%] hidden md:block z-[1500] md:opacity-1">
+            <div className="navigation__nav text-white text-[2rem] fixed top-[3rem] left-[30%] transition-all duration-[0.8s] w-[100%] hidden md:block z-[1500] md:opacity-1">
             <ul className="flex flex-col md:flex-row gap-10 mt-20 md:mt-0">
                 <li><Link to={"/"}>Home</Link></li>
                 <li><Link to={"/about-us"}>About us</Link></li>
@@ -38,7 +38,7 @@ export default function Navigation() {
 
 
           {/* ------------------- */}
-          <div className="absolute top-0 md:top-10 right-[7rem] flex gap-6 md:gap-10 items-end text-white">
+          <div className="absolute top-0 md:top-4 right-[7rem] flex gap-6 md:gap-10 items-end text-white">
                 {/* 3. Localisation */}
               <div className='flex gap-2 mt-10'>
                 <img src={usflag} className='rounded-full w-10 h-10 md:w-14 md:h-14 object-fit' alt="localisation img" />
@@ -46,9 +46,10 @@ export default function Navigation() {
               </div>
 
     {/* Contact */}
-              <div className="bg-white px-8 py-4 text-md md:px-14 md:py-6 text-2xl text-baseColor">
-                <Link to={"/contact"}>CONTACT</Link>
-              </div>
+              {/* <div className="bg-white px-8 py-4 text-md md:px-14 md:py-6 text-2xl text-baseColor"> */}
+                <Link className='bg-white px-8 py-4 text-md md:px-14 md:py-6 text-2xl text-baseColor' to={"/contact"}>CONTACT</Link>
+              {/* </div> */}
+              {/* <Button btnLabel='CONTACT' linkTo='/contact'/> */}
             </div>
 
 

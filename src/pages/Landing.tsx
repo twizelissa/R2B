@@ -19,17 +19,22 @@ import { Link } from 'react-router-dom'
 import Footer from '../components/Footer.js'
 import Title from '../components/Title.js'
 
- function Landing(){
+function Landing(){
     return(
         <div>
-           <header className="w-full h-[55vh] md:h-[100vh] relative">
+           <header
+            // style={{backgroundImage:`url(${TopPhoto})`}} 
+            className='baseHeader w-full h-[55vh] md:h-[100vh] relative bg-local'>
+
+               
+           {/* className="w-full h-[55vh] md:h-[100vh] relative bg-fixed" style={{backgroundImage:URL}} */}
                <Navigation/>
 
            <div className="bg-video absolute top-0 left-0 h-full w-full -z-1 opacity-[0.07] overflow-hidden">
            </div>
 
-          <div className="absolute text-center top-[60%] md:top-[50%] left-[20%] md:left-[50%] transform -translate-x-[10%] md:-translate-x-[50%] -translate-y-[50%] ">
-            <h1 className="text-center text-white block text-[3rem] md:text-[8rem] md:leading-[9rem] mb-32 md:mb-40">
+          <div className="absolute text-center top-[60%] md:top-[40%] left-[20%] md:left-[55%] transform -translate-x-[10%] md:-translate-x-[5%] -translate-y-[50%] ">
+            <h1 className="text-white block text-[1.5rem] md:text-[5rem] md:leading-[6rem] mb-32 md:mb-20">
               Get your company grow with our services
             </h1>
 
@@ -44,9 +49,8 @@ import Title from '../components/Title.js'
 
 {/* ----------MAIN---------- */}
            <main>
-
             {/*----------- About section ----------*/}
-            <div className="flex flex-col md:flex-row bg-[#828f9a] md:gap-40 h-[60vh] md:h-[45vh]">
+            <div className="flex flex-col w-[70%] absolute left-[10%] top-[80%] md:flex-row bg-[#828f9a] md:gap-40 h-[60vh] md:h-[45vh]">
               <div className="w-[100%] md:w-[50%]">
                 <img src={aboutImage} className="object-cover w-full h-full" alt="About image" />
               </div>
@@ -61,7 +65,7 @@ import Title from '../components/Title.js'
             </div>
 
 {/* -------Services section */}
-            <div className="py-24 md:py-36 relative top-full">
+            <div className="py-24 md:py-36 relative top-[20rem]">
               <Title title='Services'/>
               <div className="mt-20">
                 <img src={wheelImage} alt="wheel svg" />

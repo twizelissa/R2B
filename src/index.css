@@ -36,3 +36,12 @@ main{
     padding: 0 1rem;
   }
 }
+
+.baseHeader{
+  background-image: linear-gradient(
+    to right,
+    rgba(25, 47, 67, 0.418),
+    rgba(40, 105, 165, 0.174186)
+  ),url(./assets/images/TopPhoto.jpg);
+  background-size: cover;
+}
