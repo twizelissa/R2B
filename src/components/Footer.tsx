@@ -9,7 +9,7 @@ export default function Footer() {
     <div className="py-24 my-20 text-white text-baseFont">
        <div className="flex md:flex-row flex-col items-start h-full">
          {/* Logo */}
-         <div className="flex md:flex-col flex-row gap-10 items-center justify-start md:justify-between md:h-[20vh] h-[5vh] md:w-[25%] w-full">
+         <div className="flex md:flex-col flex-row gap-10 items-center justify-start md:justify-between md:h-[20vh] h-[5vh] md:w-[25%] w-full mb-8">
             <div className='md:w-[90%] w-[50%]'>
                 <img src={Logo} className='w-full object-cover' alt="logo" />
             </div>
@@ -40,14 +40,14 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex flex-grow md:flex-row flex-wrap items-start justify-items-start md:w-[75%] w-full md:gap-32 gap-10 px-5">
-            <div className="flex flex-col flex-[0_0_45%] md:flex-[0_0_20%]">
+            <div className="flex flex-col flex-[0_0_45%] md:flex-[0_0_18%]">
                 <h1 className='text-[2rem] md:text-[2.5rem] font-[500] leading-[4rem] md:leading-[6rem]'>IT Solutions</h1>
                 <Link to={"/#"} className='opacity-[0.8]'>Web/App Development</Link>
                 <Link to={"/#"} className='opacity-[0.8]'>Mobile application development</Link>
                 <Link to={"/#"} className='opacity-[0.8]'>UI/UX</Link>
             </div>
 
-            <div className="flex flex-col flex-[0_0_45%] md:flex-[0_0_20%]">
+            <div className="flex flex-col flex-[0_0_45%] md:flex-[0_0_18%]">
                 <h1 className='text-[2rem] md:text-[2.5rem] font-[500] leading-[4rem] md:leading-[6rem]'>Ad Monetization</h1>
                 <Link to={"/#"} className='opacity-[0.8]'>SEO/ASO</Link>
                 <Link to={"/#"} className='opacity-[0.8]'>Analytics</Link>
@@ -55,7 +55,7 @@ export default function Footer() {
                 <Link to={"/#"} className='opacity-[0.8]'>Google products</Link>
             </div>
 
-            <div className="flex flex-col flex-[0_0_45%] md:flex-[0_0_20%]">
+            <div className="flex flex-col flex-[0_0_45%] md:flex-[0_0_18%]">
                 <h1 className='text-[2rem] md:text-[2.5rem] font-[500] leading-[4rem] md:leading-[6rem]'>Digital Marketing</h1>
                 <Link to={"/#"} className='opacity-[0.8]'>Design</Link>
                 <Link to={"/#"} className='opacity-[0.8]'>Influencer marketing</Link>
@@ -63,7 +63,7 @@ export default function Footer() {
                 <Link to={"/#"} className='opacity-[0.8]'>Video creation</Link>
             </div>
 
-            <div className="flex flex-col flex-[0_0_45%] md:flex-[0_0_20%]">
+            <div className="flex flex-col flex-[0_0_45%] md:flex-[0_0_18%]">
                 <h1 className='text-[2rem] md:text-[2.5rem] font-[500] leading-[4rem] md:leading-[6rem]'>Work Preparation</h1>
                 <Link to={"/#"} className='opacity-[0.8]'>Connection</Link>
                 <Link to={"/#"} className='opacity-[0.8]'>Skill Training</Link>

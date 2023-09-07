@@ -57,7 +57,7 @@ function Landing(){
             </div>
 
 {/* -------Services section */}
-              <div className="py-24 md:py-36 relative md:top-[20rem] top-[36rem]">
+              <div className="py-24 md:py-36 relative md:top-[20rem] top-[40rem]">
                 <Title title='Services'/>
                 <div className="mt-20">
                   <img src={wheelImage} alt="wheel svg" />
@@ -108,19 +108,19 @@ function Landing(){
                 </div>
 
                 <div className="text-white absolute -top-4 left-20">
-                  <h1 className='text-[2.5rem] md:text-[3rem] mb-4 md:mb-8'>Faster Development</h1>
+                  <h1 className='text-[2.5rem] md:text-[3rem] mb-2 md:mb-8'>Faster Development</h1>
                   <p className='text-baseFont'>We have a large community of talents who are good in different services. We respect the time we set between us and you. 
                     It means we deliver work to you in the time we agreed on. No delay.</p>
                 </div>
 
                 <div className="text-white absolute top-60 left-20">
-                  <h1 className='text-[2.5rem] md:text-[3rem] mb-4 md:mb-8'>Quality work</h1>
+                  <h1 className='text-[2.5rem] md:text-[3rem] mb-2 md:mb-8'>Quality work</h1>
                   <p className='text-baseFont'>With the range of services we offer, we let our talented workers put their magic in work. 
                   These experts are specialized in using different tools so that they can go beyond your expectations.</p>
                 </div>
 
                 <div className="text-white absolute top-[31rem] left-20">
-                  <h1 className='text-[2.5rem] md:text-[3rem mb-4 md:mb-8'>Affordable prices</h1>
+                  <h1 className='text-[2.5rem] md:text-[3rem mb-2 md:mb-8'>Affordable prices</h1>
                   <p className='text-baseFont'>We have a good will to work with you. That’s why our prices are not going to make you go back. 
                   We feel happy when we see your company’s flag rising up daily. According to the service you need, 
                   choose the best plan to help you grow.</p>
@@ -142,9 +142,9 @@ function Landing(){
                   <img src={awardImage} className='w-full object-cover' alt="award image" />
                 </div>
 
-                <div className="relative text-baseColor bg-white bg-gradient-to-l from-secondColor to-white opacity-[0.8] flex-1 md:h-[50vh] h-[40vh] md:w-[80%] w-[100%] md:left-[20%] md:top-0 top-20">
+                <div className="relative text-baseColor bg-white bg-gradient-to-l from-secondColor to-white opacity-[0.8] flex-1 md:h-[50vh] h-[36vh] md:w-[80%] w-[100%] md:left-[20%] md:top-0 top-20">
                   {/* For managing absolute functions */}
-                  <div className="flex flex-col justify-center items-center absolute top-60 md:top-20 md:left-[30%] left-5 ">
+                  <div className="flex flex-col justify-center items-center absolute top-72 md:top-20 md:left-[30%] left-[15%] ">
                     <h1 className='md:text-[5rem] text-[3rem] md:leading-[10rem] leading-[2rem]'>We stand on the top</h1>
                     <div className="flex items-center text-baseFont gap-20 text-center my-10">
                       <h1>
