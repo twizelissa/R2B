@@ -48,7 +48,7 @@ export default function Navigation() {
 
     {/* Contact */}
               <div className="bg-white px-8 py-4 text-md md:px-14 md:py-6 text-2xl text-baseColor">
-                <Link to={"/contact"}>CONTACT</Link>
+                <Link to={"/contact-us"}>CONTACT</Link>
               </div>
             </div>
 
