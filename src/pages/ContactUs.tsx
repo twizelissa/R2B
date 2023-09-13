@@ -3,22 +3,38 @@ import Footer from '../components/Footer';
 import Title from '../components/Title';
 import VerticalSocialMedia from '../components/VerticalSocialMedia';
 
+import circles from './../assets/images/circle.png';
+
 export default function ContactUs() {
   return (
     <div>
       <header className='mb-60'>
         <Navigation />
       </header>
+
+      {/* main */}
       <main>
         <div>
-          <Title title='Get In touch' />
+          <Title title='Get In touch'/>
 
-          <div className='w-[1571px] h-[727px] bg-gray-200 flex ml-5 mr-10'>
+          <div className='w-[1571px] h-[727px] bg-gray-200 flex ml-5 mr-10 mt-10'>
+
             {/* Left Side */}
-            <div className='w-[680px] h-[727px] bg-blue-300 opacity-63 flex flex-col justify-center items-center'>
-              <h2 className='text-7xl font-bold p-4'>We’d love to</h2>
-              <h2 className='text-7xl font-bold mb-4 '>hear from you</h2>
-              <div className='bg-[#8AC5FCA1] w-[409px] h-[134px]'></div>
+            <div className='w-[680px] h-[727px] bg-blue-300 opacity-63 flex flex-col pt-40 items-center'>
+              <h2 className='text-7xl font-bold p-2 '>We’d love to</h2>
+              <h2 className='text-7xl font-bold mb-10 '>hear from you</h2>
+
+              <img
+    src={circles}
+    alt="edu"
+    style={{
+      width: '375px',
+      height: '150px',
+      top :'40px'
+    }}
+  />
+
+<div className="h-20"></div> 
             </div>
 
             {/* Right Side */}

@@ -19,7 +19,7 @@ export default function About() {
         <Navigation />
         <div></div>
 
-        <div className="flex h-[80vh] relative">
+        <div className="flex h-[70vh] relative">
           <div className="w-[50%] h-full relative -z-50 p-10">
             <h1 className='text-white text-baseFont leading-[1.5] opacity-100 z-10 absolute top-[60%] md:top-[50%] left-[20%] md:left-[35%] transform -translate-x-[10%] md:-translate-x-[35%] -translate-y-[50%]'>
               <Title title='We provide real job training to foster opportunities' />
