@@ -25,7 +25,7 @@ export default function About() {
 
         <div className="flex h-[80vh] relative">
           <div className="w-[50%] h-full relative -z-50">
-            <div className="bg-secondColor opacity-[0.35] w-[100%] h-full"></div>
+            <div className="bg-seconstatisticsImagedColor opacity-[0.35] w-[100%] h-full"></div>
             <h1 className='text-white text-baseFont leading-[1.5]  opacity-100 z-10 absolute top-[60%] md:top-[50%] left-[20%] md:left-[35%] transform -translate-x-[10%] md:-translate-x-[35%] -translate-y-[50%]'>
               <span className='block text-[6rem] font-semibold my-10'>ABOUT US</span>
               <span className='block'>
